@@ -6,9 +6,63 @@
     <title>Document</title>
     <link rel="stylesheet" href="asset/css/bootstrap.min.css">
     <link rel="stylesheet" href="asset/css/all.css">
+    <style>
+    #gambar{
+        margin-left: 120px;
+
+        }
+    </style>
 </head>
 <body>
-    <script src="asset/js/jquery-3.5.1.slim.min.js"></script> 
+    <!-- header -->
+    <div class="container">
+        <div class="row">
+            <div class="col-5">
+                <!-- flex -->
+                <div class="d-flex flex-column bd-highlight mb-3 pt-2">
+                    <!-- Logo -->
+                    <img class="img-fluid" src="asset/images/logo-kartu-prakerja.png" alt="logo">
+                </div>
+                <!--  login-colum-->
+                <div class="d-flex flex-column pt-5">
+                    <h2>Login</h2>
+                    <p class="lead">Login Bagi Yang Sudah terdaftar</p>
+                </div>
+                
+                
+                <form>
+                    
+                    <!-- account -->
+                    <div class="form-group ">
+                        <!-- email -->
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">jangan perlihatkan email anda pada orang lain.</small>
+                    </div>
+                    <!-- password -->
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        
+                    </div>
+                    <!-- check box -->
+                    <div class="form-group form-check">
+                        <div class="d-flex flex-row justify-content-between">
+                      
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Ingat saya</label>
+                                <a href="#">Lupa password</a>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">login</button>
+                </form>
+            </div>
+            <div class="col-7">
+                <img src="asset/images/Pra-kerja.png" id="gambar" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+    <script src="asset/js/jQuary-3.5.1.full.js"></script> 
     <script src="asset/js/popper.min.js"> </script>
     <script src="asset/js/bootstrap.min.js"></script>
 </body>
